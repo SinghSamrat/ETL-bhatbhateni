@@ -2,9 +2,9 @@ def aggregate_sales(ctx, cs):
     query = """
     insert into samrat_bhatbhateni_olap.bhatbhateni_tgt.f_bhatbhateni_agg_sls_plc_month_t
     select 
-        concat('00',s.product_id),
-        concat('00',s.store_id),
-        concat('00',sub.category_id),
+        concat('10',s.product_id),
+        concat('10',s.store_id),
+        concat('10',sub.category_id),
         to_varchar(transaction_time,'MM'),
         sum(quantity),
         sum(amount),
