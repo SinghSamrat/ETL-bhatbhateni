@@ -54,7 +54,7 @@ def transformation_country():
         s.id,
         concat('10',s.id),
         s.country_desc,
-        'O'
+        'O',
         current_timestamp(2),
         current_timestamp(2)
     );
